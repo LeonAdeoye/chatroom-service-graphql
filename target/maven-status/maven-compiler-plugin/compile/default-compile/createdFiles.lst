@@ -1,0 +1,10 @@
+com\leon\models\ChatMessage.class
+com\leon\models\Room.class
+com\leon\models\Activity$ActivityEnum.class
+com\leon\models\Activity.class
+com\leon\services\RoomServiceImpl.class
+com\leon\controllers\MainController.class
+com\leon\repositories\RoomRepository.class
+com\leon\App.class
+com\leon\services\RoomService.class
+com\leon\AppConfig.class

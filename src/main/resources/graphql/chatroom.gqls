@@ -1,0 +1,34 @@
+type Query
+{
+    rooms: [Room]
+    roomById(id: ID): Room
+    conversationByRoomId(id: ID): [ChatMessage]
+}
+
+type ChatMessage
+{
+    id: ID
+    content: String
+    authorId: String
+    roomId: String
+}
+
+type Activity
+{
+    instigatorId: ID
+    activity: String
+    thirdPartyId: String
+}
+
+type Room
+{
+    id: ID
+    roomName: String
+    ownerId: String
+    isPrivate: Boolean
+    isValid: Boolean
+    administrators: [String]
+    members: [String]
+    conversation: [ChatMessage]
+    activities: [Activity]
+}
